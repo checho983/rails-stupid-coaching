@@ -3,7 +3,7 @@ class QuestionsController < ApplicationController
   end
 
   def answer
-    @response = params[:pepe]   #guardo lo que el usuario escribio en el input(capturado en el params)
+    @response = params[:pepe]   # guardo lo que el usuario escribio en el input(capturado en el params)
     if @response == "I am going to work"
       @answer = "Great!"         # creo variable de instancia answer(la llamo desde answer.html)
     elsif @response.ends_with?("?")
